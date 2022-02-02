@@ -14,31 +14,6 @@
     box-sizing: border-box;
 }
 
-.header {
-    width: 100%;
-    height: 85px;
-
-    .wrap{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.head_title {
-    @include fontFamily('Basis Grotesque Pro', normal, 500, 16px, 16px);
-    text-align: center;
-    flex: 2;
-    padding-top: 16px;
-}
-
-.block1 {
-    margin: 0 auto;
-    width: 1440px;
-    height: 747px;
-    background: url(./assets/background_block-1.jpg) no-repeat;
-   
-}
-
 .wrap {
     max-width: 1340px;
     max-height: 1240px;
@@ -47,4 +22,77 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 36px;
+}
+
+.header {
+    width: 100%;
+    max-height: 85px;
+
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    &_item {
+        display: inline-block;
+        margin: 0px 15px;
+    }
+}
+
+.head_title {
+    @include fontFamily('Basis Grotesque Pro', normal, 500, 16px, 16px);
+    text-align: center;
+    padding-left: 115px;
+}
+
+.block1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 747px;
+    background: url(./assets/Frame.jpg);  
+    border: 1px #EAC1BF solid;
+    .wrap {
+        height: 745px;
+        background: url(./assets/Rocks.jpg);
+        position: relative;
+    }
+}
+
+.title-wrap{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -286px;
+    margin-top: -204px;
+}
+
+.title {
+    @include fontFamily('Ogg', normal, 300, 117px, 120px);
+    position: relative;
+}
+
+.shop_button {
+    position: absolute;
+    .shop_button_item-1{
+        @include fontFamily('Basis Grotesque Pro', normal, 400, 20px, 20px);
+    }
+    .shop_button_item-2{
+        @include fontFamily('Roboto', normal, 400, 20px, 20px);
+    }
+
+    color: #fff;
+    text-decoration: none;
+    margin-left: 67%;
+    margin-top: 10px;
+}
+
+.shop_button_text {
+    margin-top: -95px;
 }

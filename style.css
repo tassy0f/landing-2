@@ -294,10 +294,8 @@
 
 .shop_button {
   position: absolute;
-  color: #fff;
-  text-decoration: none;
-  margin-left: 67%;
-  margin-top: 10px;
+  margin-left: 112%;
+  margin-top: 15px;
 }
 .shop_button .shop_button_item-1 {
   font-family: "Basis Grotesque Pro";
@@ -312,6 +310,10 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+}
+.shop_button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .shop_button_text {

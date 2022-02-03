@@ -87,10 +87,13 @@
         @include fontFamily('Roboto', normal, 400, 20px, 20px);
     }
 
-    color: #fff;
-    text-decoration: none;
-    margin-left: 67%;
-    margin-top: 10px;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    margin-left: 112%;
+    margin-top: 15px;
 }
 
 .shop_button_text {

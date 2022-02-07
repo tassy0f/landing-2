@@ -360,6 +360,7 @@
 .block3 .wrap {
   background: url(./assets/bg3_first.jpg);
   height: 899px;
+  margin-top: -17px;
 }
 
 .subwrap {

@@ -242,14 +242,21 @@
     height: 865px;
     background-size: cover; 
     border: 1px #EAC1BF solid;
-    //z-index: 2;
+   /* z-index: 2;
+    .wrap {
+        position: relative;
+    } */
 }
 
 .features {
-    //z-index: 4;
+    // z-index: 4;
     width: 350px;
     height: 504px;
     margin-top: 178px;
+    p {
+        @include fontFamily('Basis Grotesque Pro', normal, 400, 16px, 16px);
+        text-transform: uppercase;
+    }
 
     .black_button {
         width: 282px;
@@ -258,10 +265,56 @@
         background-size: cover;
         text-transform: uppercase;
         color: #000;
+
+        &:hover{
+            background:#121111; 
+            box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        }
+    
+        &:active {
+            background:#3b3a3a; 
+            box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+        }
     }
 }
 
-/*.oval {
+.popular_crystal_list {
+    @include fontFamily('Ogg', normal, 400, 47px, 48px);
+    li {
+        list-style-type: none;
+        padding-left: 58px;
+        margin-left: -58px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+
+    li:nth-child(1) {
+        background: url(./assets/roze_qardz.jpg) no-repeat;
+        background-position: -2%;
+    }
+
+    li:nth-child(2) {
+        background: url(./assets/pyrite.jpg) no-repeat;
+        background-position: -2%;
+    }
+
+    li:nth-child(3) {
+        background: url(./assets/shungite.jpg) no-repeat;
+        background-position: -2%;
+    }
+
+    li:nth-child(4) {
+        background: url(./assets/amesthystjpg.jpg) no-repeat;
+        background-position: -2%;
+    }
+
+    li:nth-child(5) {
+        background: url(./assets/selenite.jpg) no-repeat;
+        background-position: -2%;
+    }
+}
+
+.oval {
     width: 659px;
     height: 652px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), #FACCBF;
@@ -269,4 +322,18 @@
     margin-top: -157px;
     position: absolute;
     z-index: 1;
-} */
+} 
+
+.shape_cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 178px;
+    width: 790px;
+}
+
+.cards {
+    width: 348px;
+    height: 542px;
+    border: 1px #EAC1BF solid;
+    border-radius: 16px;
+}

@@ -233,7 +233,7 @@
     margin: 0 auto;
     width: 100%;
     height: 960px;
-    position: relative;
+    
 }
 
 .block5 {
@@ -242,14 +242,11 @@
     height: 865px;
     background-size: cover; 
     border: 1px #EAC1BF solid;
-   /* z-index: 2;
-    .wrap {
-        position: relative;
-    } */
+    z-index: 2;
+    position: relative;
 }
 
 .features {
-    // z-index: 4;
     width: 350px;
     height: 504px;
     margin-top: 178px;
@@ -312,14 +309,14 @@
         background: url(./assets/selenite.jpg) no-repeat;
         background-position: -2%;
     }
-}
+} // add :hover by button correct
 
 .oval {
     width: 659px;
     height: 652px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), #FACCBF;
-    margin-left: 590px;
-    margin-top: -157px;
+    margin-left: 890px;
+    margin-top: -990px;
     position: absolute;
     z-index: 1;
 } 
@@ -336,4 +333,113 @@
     height: 542px;
     border: 1px #EAC1BF solid;
     border-radius: 16px;
+    background-color: #fff;
+}
+
+.shape_name {
+    width: 100%;
+    margin-top: 41px;
+    @include fontFamily('Basis Grotesque Pro', normal, 400, 16px, 20px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shape_price {
+    width: 100%;
+    margin-top: 52px;
+    @include fontFamily('Basis Grotesque Pro', normal, 400, 16px, 16px);
+    text-align: center;
+}
+
+.shape_image_tower {
+    margin-top: 114px;
+    text-align: center;
+}
+
+.shape_image_pyramid {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.block6 {
+    width: 100%;
+    height: 524px;
+    background: #FBF9F9;
+}
+
+.intention {
+    margin-top: 98px;
+    @include fontFamily('Ogg', normal, 400, 47px, 68px);
+    text-align: center;
+}
+
+.intention_list {
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.intention_description {
+    margin-top: 27px;
+    @include fontFamily('Basis Grotesque Pro', normal, 400, 16px, 16px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intention_item {
+    position: relative;
+    z-index: 2;
+}
+
+.hidden_shadow {
+    position: absolute;
+    z-index: 1;
+    background: rgba(185, 86, 187, 0.35);
+    width: 111px;
+    height: 112px;
+    border-radius: 31px;
+    background-position: 50% 50%;
+    filter: blur(50px);
+    margin-top: -160px;
+}
+
+.block7 {
+    width: 100%;
+    height: 922px;
+    border: 1px #EAC1BF solid;
+
+    .wrap {
+        padding-top: 31px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 36px;
+    }
+}
+
+.gifts_title {
+    margin-top: 99px;
+    @include fontFamily('Ogg', normal, 400, 116px, 120px);
+    text-align: center;
+}
+
+.gifts_list {
+    margin-top: 102px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.gifts_items {
+    width: 306px;
+
+    &_heading {
+        margin-top: 12px;
+        margin-bottom: 13px;
+        @include fontFamily('Ogg', normal, 400, 46px, 48px);
+    }
+
+    &_description {
+        @include fontFamily('Basis Grotesque Pro', normal, 400, 15px, 24px);
+    }
 }

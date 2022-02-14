@@ -24,6 +24,8 @@
     padding-bottom: 36px;
 }
 
+//******************************************** Start HEADER *******************
+
 .header {
     width: 100%;
     max-height: 85px;
@@ -51,15 +53,17 @@
     padding-left: 115px;
 }
 
+//******************************************** Start BLOCK 1 *******************
+
 .block1 {
     margin: 0 auto;
     width: 100%;
     height: 747px;
-    background: url(./assets/Frame.jpg);  
+    background: url(./assets/backgrounds/Frame.jpg);  
     border: 1px #EAC1BF solid;
     .wrap {
         height: 745px;
-        background: url(./assets/Rocks.jpg);
+        background: url(./assets/backgrounds/Rocks.jpg);
         position: relative;
     }
 }
@@ -101,6 +105,8 @@
     margin-top: -95px;
 }
 
+//******************************************** Start BLOCK 2 *******************
+
 .block2 {
     width: 100%;
     height: 85px;
@@ -128,11 +134,13 @@
     100%{transform: translate(-100%, 10%)}
 } */
 
+//******************************************** Start BLOCK 3 *******************
+
 .block3 {
     margin: 0 auto;
     width: 100%;
     height: 900px;
-    background: url(./assets/bg3_back.jpg); 
+    background: url(./assets/backgrounds/bg3_back.jpg); 
     background-size: cover; 
     border: 1px #EAC1BF solid;
     .wrap {
@@ -176,7 +184,7 @@
     &_right {
         width: 771px;
         height: 778px;
-        background: url(./assets/bg3_first.jpg);
+        background: url(./assets/backgrounds/bg3_first.jpg);
         padding-left: 170px;
         padding-top: 32px;
     }
@@ -229,12 +237,16 @@
     }
 }
 
+//******************************************** Start BLOCK 4 *******************
+
 .block4 {
     margin: 0 auto;
     width: 100%;
     height: 960px;
     
 }
+
+//******************************************** Start BLOCK 5 *******************
 
 .block5 {
     margin: 0 auto;
@@ -258,18 +270,19 @@
     .black_button {
         width: 282px;
         height: 48px;
-        background: url(./assets/bg_button.jpg);
+        background: url(./assets/backgrounds/bg_button.jpg);
         background-size: cover;
         text-transform: uppercase;
         color: #000;
+        border-radius: 32px;
 
         &:hover{
-            background:#121111; 
+            background:#EAC1BF; 
             box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
         }
     
         &:active {
-            background:#3b3a3a; 
+            background:hsl(39, 47%, 73%); 
             box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
         }
     }
@@ -286,27 +299,27 @@
     }
 
     li:nth-child(1) {
-        background: url(./assets/roze_qardz.jpg) no-repeat;
+        background: url(./assets/popular_list/roze_qardz.jpg) no-repeat;
         background-position: -2%;
     }
 
     li:nth-child(2) {
-        background: url(./assets/pyrite.jpg) no-repeat;
+        background: url(./assets/popular_list/pyrite.jpg) no-repeat;
         background-position: -2%;
     }
 
     li:nth-child(3) {
-        background: url(./assets/shungite.jpg) no-repeat;
+        background: url(./assets/popular_list/shungite.jpg) no-repeat;
         background-position: -2%;
     }
 
     li:nth-child(4) {
-        background: url(./assets/amesthystjpg.jpg) no-repeat;
+        background: url(./assets/popular_list/amesthystjpg.jpg) no-repeat;
         background-position: -2%;
     }
 
     li:nth-child(5) {
-        background: url(./assets/selenite.jpg) no-repeat;
+        background: url(./assets/popular_list/selenite.jpg) no-repeat;
         background-position: -2%;
     }
 } // add :hover by button correct
@@ -361,6 +374,8 @@
     text-align: center;
 }
 
+//******************************************** Start BLOCK 6 *******************
+
 .block6 {
     width: 100%;
     height: 524px;
@@ -404,6 +419,8 @@
     margin-top: -160px;
 }
 
+//******************************************** Start BLOCK 7 *******************
+
 .block7 {
     width: 100%;
     height: 922px;
@@ -445,6 +462,8 @@
     }
 }
 
+//******************************************** Start BLOCK 8 *******************
+
 .block8 {
     width: 100%;
     height: 424px;
@@ -474,6 +493,8 @@
         margin-top: 24px;
     }
 }
+
+//******************************************** Start BLOCK 9 *******************
 
 .block9 {
     width: 100%;
@@ -507,6 +528,8 @@
     text-align: center;
 }
 
+//******************************************** Start BLOCK 10 *******************
+
 .block10 {
     width: 100%;
     height: 276px;
@@ -529,11 +552,13 @@
     }
 }
 
+//******************************************** Start FOOTER *******************
+
 footer {
     width: 100%;
     height: 491px;
     margin: 0 auto;
-    background: url(./assets/bg_footer.jpg);
+    background: url(./assets/backgrounds/bg_footer.jpg);
     background-size: cover;
 }
 
@@ -581,3 +606,4 @@ footer {
     @include fontFamily('Basis Grotesque Pro', normal, 400, 12px, 24px);
     margin-top: 18px;
 }
+//******************************************** The END thx for watching) *******************
